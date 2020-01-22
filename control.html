@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<title>angular</title>
+
+<body ng-app="myApp">
+
+<p><a href="#/!">Main</a></p>
+
+<a href="#!sem1">sem1</a>
+<a href="#!sem2">sem2</a>
+<a href="#!sem3">sem3</a>
+
+<div class="ng-view" style="background-color:beige;"></div>
+<script>
+var app = angular.module("myApp", ["ngRoute"]);
+app.config(function($routeProvider) {
+    $routeProvider
+    .when("/", {
+        templateUrl : "main.html"
+    })
+    .when("/sem1", {
+        templateUrl : "sem1.html"
+    })
+    .when("/sem2", {
+        templateUrl : "sem2.html"
+    })
+    .when("/sem3", {
+        templateUrl : "sem3.html"
+    });
+});
+</script>
+<p>Click on the links to navigate...</p>
+</body>
+</html>

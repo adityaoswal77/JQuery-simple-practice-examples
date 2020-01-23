@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
     <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -14,21 +15,97 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Angular Javaaaascriptt -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- font oswald -->
+        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">    
+        <script>WebFont.load({  google: {    families: ["Oswald:200,300,400,500,600,700","Droid Sans:400,700","Roboto:300,regular,500"]  }});</script>
+    
+            
+    <!--for show and hide  -->
             <script>
-            $(document).ready(function(){
-            $("button").click(function(){
-                $("p").toggle();
+                $(document).ready(function(){
+                $("button").click(function(){
+                    $("p").toggle();
+                    });
                 });
-            });
-    </script>
+            </script>
+    <!-- for popup -->
+             <script>
+                // When the user clicks on <div>, open the popup
+                    function myPopup1() {
+                    var popup = document.getElementById("myPopup1");
+                    popup.classList.toggle("show");
+                    }
+                    function myPopup2() {
+                    var popup = document.getElementById("myPopup2");
+                    popup.classList.toggle("show");
+                    }
+                    function myPopup3() {
+                    var popup = document.getElementById("myPopup3");
+                    popup.classList.toggle("show");
+                    }
+                    function myPopup4() {
+                    var popup = document.getElementById("myPopup4");
+                    popup.classList.toggle("show");
+                    }
+            </script>
 </head>
-<body>
-<div class="container">
+<body style="font-family: Oswald;">
+    <center>
+    <div class="container-fluid" style="background-color:#0f0d10; width:100vw ; height:100vh ;">
+<div class="container" style="background-color:#0f0d10; padding: 30px; vertical-align: middle; padding-top :20vw;">
+ 
+        <div class="design-bar" style="width: auto; height: 2px; background-color:#feda2a;"> </div>
+    <h1 style="color: WHITE;">MY TIMELINE</h1>
+
     <div>
-        
+
+        <div class="design-bar" style="width: auto; height: 2px; background-color: #feda2a; padding: 1px; margin:5px;"> </div>
+    <div class="row" style="  color: #ffffff; font-size: 32px; ">
+
+                <div class="col">
+                    <div class="popup" onclick="myPopup1()">SEMESTER 4
+                        <span class="popuptext" id="myPopup1">
+                            <h6>this was gooood</h6>
+                        </span>
+                
+                    </div>
+                
+                </div>
+                <div class="col">
+                    <div class="popup" onclick="myPopup2()">SEMESTER 2
+                        <span class="popuptext" id="myPopup2">
+                            <h6>this was gooood</h6>
+                        </span>
+                    
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="popup" onclick="myPopup3()">SEMESTER 3
+                        <span class="popuptext" id="myPopup3">
+                            <h6>this was gooood</h6>
+                            <img src="./img/1024x1024 (4).jpg" style="width: 100px ; height: 100px;" alt="">
+                        </span>
+                    
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="popup" onclick="myPopup4()">SEMESTER 4
+                        <span class="popuptext" id="myPopup4">
+                            <h6>this was gooood</h6>
+                        </span>
+
+                    </div>
+                    
+
+                    </div>
+
+            </div>
+
     </div>
 
-
 </div>
+</div>
+
+</center>
 </body>
 </html>
